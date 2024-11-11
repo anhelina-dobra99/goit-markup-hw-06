@@ -85,6 +85,7 @@ img {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  z-index: 10;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -94,13 +95,11 @@ img {
   pointer-events: auto;
 }
 .mobile-menu-container {
-  position: absolute;
   padding-top: 72px;
   padding-bottom: 40px;
   display: flex;
   flex-direction: column;
   height: 100%;
-  overflow-y: auto;
 }
 .container.mobile-menu-container {
   align-items: flex-start;
@@ -166,12 +165,12 @@ img {
   padding-top: 72px;
   padding-bottom: 72px;
   margin: 0 auto;
-  min-width: 320px;
+  max-width: 320px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/peopleoffice.jpg);
+    url(../images/Dark-bg-mob@1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -182,7 +181,7 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/peopleoffice@2.jpg);
+      url(../images/Dark-bg-mob@2.jpg);
   }
 }
 .page-header {
@@ -803,6 +802,21 @@ input[type="checkbox"]:checked + .checkbox-lbl .tick {
   .hero {
     padding-top: 112px;
     padding-bottom: 112px;
+    max-width: 768px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Dark-bg-tab@1.jpg);
+  }
+  @media (min-resolution: 192dpi) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/Dark-bg-tab@2.jpg);
+    }
   }
   .page-header {
     font-size: 56px;
@@ -844,6 +858,9 @@ input[type="checkbox"]:checked + .checkbox-lbl .tick {
     padding-left: 15px;
     padding-right: 15px;
   }
+  .logo {
+    margin-right: 76px;
+  }
   .contact-list {
     flex-wrap: nowrap;
     align-items: center;
@@ -858,6 +875,21 @@ input[type="checkbox"]:checked + .checkbox-lbl .tick {
   .hero {
     padding-top: 188px;
     padding-bottom: 188px;
+    max-width: 1440px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/peopleoffice.jpg);
+  }
+  @media (min-resolution: 192dpi) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/peopleoffice@2.jpg);
+    }
   }
   .page-header {
     margin-bottom: 48px;
